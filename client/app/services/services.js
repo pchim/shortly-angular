@@ -17,7 +17,6 @@ angular.module('shortly.services', [])
       url: '/api/links',
       data: input
     }).then(function(resp) {
-      resp.status = 201;
       return resp;
     });
 
