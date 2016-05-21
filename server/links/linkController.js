@@ -58,6 +58,9 @@ module.exports = {
     findLink({code: req.params.code})
       .then(function (link) {
         if (!link) {
+          // console.log('current req: ', req);
+          //console.log('current res: ', res);
+          // console.log('Right before error: ', link);
           return next(new Error('Link not added yet'));
         }
 
